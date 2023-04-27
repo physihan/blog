@@ -1,8 +1,8 @@
 ---
-title: "First post"
+title: "部署指南"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
-heroImage: "/placeholder-hero.jpg"
+heroImage: "/beauty.png"
 ---
 
 # Astro Starter Kit: Blog
