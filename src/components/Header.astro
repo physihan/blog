@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <script>
-	const navBar = document.querySelector(".nav-bar");
+	const navBar = document.querySelector(".responsive-nav");
 	let prevScrollPos = window.pageYOffset;
 
 	window.addEventListener("scroll", () => {
@@ -20,29 +20,23 @@ import HeaderLink from "./HeaderLink.astro";
 </script>
 
 <header>
-	<nav class="w-full nav-bar">
+	<nav class="w-full responsive-nav">
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
 	</nav>
 </header>
 <style>
-
 	nav {
 		background-image: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
 		height: 50px;
 		line-height: 50px;
 		text-align: left;
-
-	}
-	.nav-bar {
 		position: fixed;
 		display: flex;
 		justify-content: center;
-		width: 100%;
 		top: 0;
 		z-index: 3;
-		font-size: 1.2rem;
 		transition: all 0.3s ease-in-out;
 	}
 
