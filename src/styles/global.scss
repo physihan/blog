@@ -76,7 +76,29 @@ blockquote {
 	font-style: italic;
 }
 
+/* 隐藏滚动条 */
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* 添加背景色和圆角边框 */
+body::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+
+/* 添加滑块颜色和圆角边框 */
+body::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+	border-radius: 10px;
+}
+
 /*响应式 */
+html {
+	font-size: 16px;
+	--content-padding: 20px;
+}
+
 .responsive-nav {
 	font-size: 1.2rem;
 }
@@ -85,7 +107,19 @@ blockquote {
 	width: 60%;
 }
 
+.responsive {
+	&-list {}
+
+	&-item {
+		font-size: 1rem;
+	}
+}
+
 @media screen and (max-width: 640px) {
+	html {
+		--content-padding: 20px;
+	}
+
 	.responsive-article {
 		width: 100vw;
 	}
