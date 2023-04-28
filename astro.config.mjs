@@ -4,9 +4,14 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 import solidJs from "@astrojs/solid-js";
-
+import vercel from '@astrojs/vercel/serverless';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
-  integrations: [mdx(), sitemap(), tailwind(), solidJs()]
+  output: 'server',
+  integrations: [mdx(), sitemap(), tailwind(), solidJs()],
+  adapter: vercel({
+    analytics: true
+  })
 });
+
