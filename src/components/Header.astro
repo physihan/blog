@@ -21,26 +21,26 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
 	<nav class="w-full nav-bar">
+		1
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
 	</nav>
 </header>
 <style>
-	header {
-		/* margin: 0em 0 2em; */
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
+
 	nav {
 		background-image: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
 		height: 50px;
 		line-height: 50px;
-		text-align: center;
+		text-align: left;
+
 	}
 	.nav-bar {
 		position: fixed;
+		display: flex;
+		justify-content: center;
+		width: 80px;
 		top: 0;
 		z-index: 3;
 		font-size: 1.2rem;

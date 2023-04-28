@@ -90,6 +90,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				border-radius: 4px;
 				background: #fff;
 			}
+			@media (max-width: 620px) {
+				article {
+					width: calc(100vw - 20px);
+				}
+			}
 		</style>
 	</body>
 </html>

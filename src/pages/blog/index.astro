@@ -54,13 +54,17 @@ const posts = (await getCollection("blog")).sort(
 		<!-- <Footer /> -->
 		<style>
 			main {
-				width: 800px;
+				width: 60%;
+				min-width: 400px;
 				margin: auto;
 				padding: 20px;
 			}
-	
+			/* 应用于屏幕宽度小于等于320像素的设备（如小型手机） */
+
+
 			li {
 				height: 40px;
+				font-size: 20px;
 			}
 		</style>
 	</body>
