@@ -7,7 +7,7 @@ import solidJs from "@astrojs/solid-js";
 import vercel from '@astrojs/vercel/serverless';
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://xihan.info',
   integrations: [mdx(), sitemap(), tailwind(), solidJs()],
   server: {
     host: "0.0.0.0"
